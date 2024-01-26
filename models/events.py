@@ -19,3 +19,4 @@ class Event(BaseModel):
                 "location": "Google Meet"
             }
         }
+
