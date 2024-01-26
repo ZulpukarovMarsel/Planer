@@ -15,3 +15,15 @@ class User(BaseModel):
                 "events": [],
             }
         }
+class UserSignIn(BaseModel):
+    email: EmailStr
+    password: str
+
+    class Config:
+        schema_extra = {
+            "example": {
+                "email": "fastapi@packt.com",
+                "password": "strong!!!",
+                "events": [],
+            }
+        }
